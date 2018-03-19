@@ -1,1 +1,14 @@
 @import '~bulma';
+@import 'variables';
+
+.header {
+  border-top: $size-9 solid $green;
+
+  &__brand .navbar-item:last-child {
+    margin-left: auto;
+  }
+}
+
+.card-day {
+  margin-bottom: $size-6;
+}
