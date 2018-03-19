@@ -1,0 +1,27 @@
+[
+  {
+    date: "15-03-2018",
+    description: "Nothing, just kicking it off"
+    markAs: "wasted"
+  },
+  {
+    date: "16-03-2018",
+    description: "Nothing, sleep early"
+    markAs: "wasted"
+  },
+  {
+    date: "17-03-2018",
+    description: "Nothing, went BacGiang"
+    markAs: "wasted"
+  },
+  {
+    date: "18-03-2018",
+    description: "Back to Hanoi. Not much"
+    markAs: "wasted"
+  },
+  {
+    date: "19-03-2018",
+    description: "Back to work. Spent time to read and code. Learn about Angular folder's structure."
+    markAs: "good"
+  },
+]
