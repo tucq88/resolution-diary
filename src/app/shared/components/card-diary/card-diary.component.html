@@ -1,12 +1,10 @@
 <div class="card card-day">
   <header class="card-header">
-    <p class="card-header-title">
+    <h4 class="card-header-title">
       Component
-    </p>
-    <a href="#" class="card-header-icon" aria-label="more options">
-        <span class="icon">
-          <i class="fas fa-angle-down" aria-hidden="true"></i>
-        </span>
+    </h4>
+    <a href="javascript:void(0)" class="card-header-icon" aria-label="more options" (click)="showModal()">
+      <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
     </a>
   </header>
   <div class="card-content">
@@ -17,9 +15,23 @@
       <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
     </div>
   </div>
-  <footer class="card-footer">
-    <a href="#" class="card-footer-item">Save</a>
-    <a href="#" class="card-footer-item">Edit</a>
-    <a href="#" class="card-footer-item">Delete</a>
-  </footer>
+</div>
+
+<div class="modal" #diaryModal>
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Modal title</p>
+      <button class="delete" aria-label="close" (click)="hideModal()"></button>
+    </header>
+    <section class="modal-card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque commodi culpa cum deleniti
+        doloremque, facilis fugiat fugit, ipsum laboriosam optio porro sequi. Aliquam fugiat, impedit iusto magnam rerum
+        vel!</p>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Save changes</button>
+      <button class="button">Cancel</button>
+    </footer>
+  </div>
 </div>
