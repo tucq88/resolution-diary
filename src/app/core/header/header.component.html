@@ -1,10 +1,30 @@
 <header class="header">
   <nav class="navbar container" role="navigation" aria-label="main navigation">
     <div class="navbar-brand header__brand">
-      <a class="navbar-item" href="/">
+      <a class="navbar-item" href="javascript:void(0)">
         <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma" width="112" height="28">
       </a>
-      <a class="navbar-item" href="javascript:void(0)">About</a>
+      <div class="navbar-burger" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+
+    <div class="navbar-menu" [ngClass]="{'is-active': isMenuOpenned}">
+      <div class="navbar-end">
+        <a class="navbar-item" href="javascript:void(0)">About</a>
+
+        <div *ngIf="authState$ | async as user; else showLogin">
+          <span class="navbar-item">Hello {{ user.displayName }}!</span>
+          <a class="navbar-item" href="javascript:void(0)" (click)="logout()">Logout</a>
+        </div>
+        <ng-template #showLogin>
+          <a class="navbar-item" href="javascript:void(0)" (click)="login()">Login</a>
+        </ng-template>
+
+      </div>
+    </div>
+
   </nav>
 </header>

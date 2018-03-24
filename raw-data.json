@@ -24,4 +24,14 @@
     description: "Back to work. Spent time to read and code. Learn about Angular folder's structure."
     markAs: "good"
   },
+  {
+    date: "20-03-2018",
+    description: "Work alot on Diary app. Implementing project structure. Read a lot."
+    markAs: "good"
+  },
+  {
+    date: "21-03-2018",
+    description: "Just searching books and go to sleep early."
+    markAs: "wasted"
+  },
 ]

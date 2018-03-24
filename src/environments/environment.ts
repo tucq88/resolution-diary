@@ -1,11 +1,11 @@
 export const environment = {
-  production: true,
+  production: false,
   firebase: {
-    apiKey: '',
-    authDomain: '',
-    databaseURL: '',
-    projectId: '',
+    apiKey: 'AIzaSyDKa_-TWVErrN8nx-AyoNeUDAEq4gXiwW0',
+    authDomain: 'resolution-diary.firebaseapp.com',
+    databaseURL: 'https://resolution-diary.firebaseio.com',
+    projectId: 'resolution-diary',
     storageBucket: '',
-    messagingSenderId: ''
+    messagingSenderId: '572189833617'
   }
 };

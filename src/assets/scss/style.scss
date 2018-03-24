@@ -4,10 +4,6 @@
 
 .header {
   border-top: $size-9 solid $green;
-
-  &__brand .navbar-item:last-child {
-    margin-left: auto;
-  }
 }
 
 .card-day {
