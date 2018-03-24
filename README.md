@@ -9,3 +9,7 @@ Simple diary that helps me keep track with your new year's resolutions
 - [] Login via social network: Facebook / Twitter
 
 # Suggestion features
+
+
+# Techdebts 
+- [] Custom modal component with included service
