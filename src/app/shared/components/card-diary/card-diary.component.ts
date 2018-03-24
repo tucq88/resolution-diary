@@ -1,5 +1,6 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { ModalService } from '../../modal.service';
+import { NoteModel } from '../../models/note.model';
 
 @Component({
   selector: 'app-card-diary',
@@ -7,6 +8,7 @@ import { ModalService } from '../../modal.service';
   styleUrls: ['./card-diary.component.scss']
 })
 export class CardDiaryComponent implements OnInit {
+  @Input() note: NoteModel;
   @ViewChild( 'diaryModal' ) diaryModal: ElementRef;
 
   constructor(private modalService: ModalService) { }

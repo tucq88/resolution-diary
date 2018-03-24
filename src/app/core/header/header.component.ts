@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { Observable } from 'rxjs/Observable';
-import { User } from 'firebase/app';
+import * as firebase from 'firebase/app';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +10,7 @@ import { User } from 'firebase/app';
 })
 export class HeaderComponent implements OnInit {
   isMenuOpenned = false;
-  authState$: Observable<User|null>;
+  authState$: Observable<firebase.User | null>;
   constructor(private authService: AuthService) { }
 
   ngOnInit() {
