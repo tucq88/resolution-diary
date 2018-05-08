@@ -21,7 +21,9 @@ export class DashboardComponent implements OnInit {
     const getUserId$ = this.authService.getUserId();
     this.notes$ = getUserId$
       .pipe(
-        flatMap(userId => this.noteService.list(userId))
+        flatMap( userId => {
+          return this.noteService.list(userId);
+        })
       );
   }
 

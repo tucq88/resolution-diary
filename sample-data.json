@@ -1,0 +1,16 @@
+{
+  "notes": {
+    "note-uuid-1": {
+      "date": 123123124,
+      "content": "Lorem ipsum dolor sit amet",
+      "isGood": true,
+      "author": "user-uuid-1"
+    },
+    "note-uuid-2": {
+      "date": 123132424,
+      "content": "Ipsum dolor sit",
+      "isGood": false,
+      "author": "user-uuid-1"
+    }
+  }
+}

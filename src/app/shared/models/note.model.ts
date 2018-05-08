@@ -1,6 +1,7 @@
 import { BaseModel } from './base.model';
 
 export class NoteModel implements BaseModel<NoteModel> {
+  id: string;
   date: string;
   content: number;
   isGood: false;

@@ -5,11 +5,13 @@ import { HeaderComponent } from './header/header.component';
 import { CoreRoutingModule } from './core-routing.module';
 import { RouterModule } from '@angular/router';
 import { AuthService } from './services/auth.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule( {
   imports: [
     CommonModule,
-    CoreRoutingModule
+    CoreRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [AuthService],
   declarations: [ NotFoundComponent, HeaderComponent ],
